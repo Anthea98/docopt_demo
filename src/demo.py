@@ -13,6 +13,12 @@ Options:
 
 from docopt import docopt
 opt = docopt(__doc__)
-print(opt)
-print(type(opt))
-print(opt['<arg_op>'])
+
+def main(opt):
+    print(opt)
+    print(type(opt))
+    print(opt['<arg_op>'])
+
+if __name__ == "__main__":
+    main(opt)
+
